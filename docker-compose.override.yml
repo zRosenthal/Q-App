@@ -8,3 +8,4 @@ services:
   admin_client:
     volumes:
       - ./Q-Admin/app/:/usr/share/nginx/html
+      - ./Q-Admin/node_modules/:/usr/share/nginx/html/node_modules
