@@ -1,0 +1,10 @@
+version: '2'
+services:
+  server:
+    volumes:
+      - ./Q-server/dist:/var/www/app/current/dist
+      - ./Q-server/package.json:/var/www/app/current/package.json
+      - /var/www/app/current/node_modules
+  admin_client:
+    volumes:
+      - ./Q-Admin/app/:/usr/share/nginx/html

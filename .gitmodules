@@ -1,0 +1,6 @@
+[submodule "Q-server"]
+	path = Q-server
+	url = git@github.com:zRosenthal/Q-server.git
+[submodule "Q-Admin"]
+	path = Q-Admin
+	url = git@github.com:ryancornillie/Q-Admin.git
