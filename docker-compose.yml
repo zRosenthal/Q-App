@@ -27,3 +27,9 @@ services:
         build: Q-Admin
         ports:
         - "8080:80"
+
+    web_socket:
+        build: web-socket,
+        ports:
+        - "3000:3000"
+        command: npm run start
