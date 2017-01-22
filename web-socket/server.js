@@ -51,7 +51,18 @@ app.post('/', function (req, res, next) {
     aWss.clients.forEach(function (client) {
         client.send(jsonData);
     });
+});
 
+app.delete('/', function (req, res) {
+    console.log('body: ', req.body);
+
+    req.body['delete'] = true;
+
+    jsonData = JSON.stringify(req.body);
+
+    aWss.clients.forEach(function (client) {
+        client.send(jsonData);
+    });
 });
 
 app.listen(3333);
