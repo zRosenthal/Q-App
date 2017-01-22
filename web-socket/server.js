@@ -13,9 +13,11 @@ app.use(function (req, res, next) {
 
 app.use(bodyParser.json());
 
-app.post('/send', function(req, res, next){
+app.post('/', function(req, res, next){
 
     data.concat(req.body);
+
+    console.log('hii: ', data);
 
     res.end();
 });
