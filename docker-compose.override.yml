@@ -12,3 +12,4 @@ services:
   web_socket:
     volumes:
       - ./web-socket:/usr/src/app
+      - ./web-socket/node_modules/:/usr/src/app/node_modules
