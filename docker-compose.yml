@@ -31,5 +31,5 @@ services:
     web_socket:
         build: web-socket
         ports:
-        - "3000:3000"
+        - "3333:3333"
         command: npm run start
